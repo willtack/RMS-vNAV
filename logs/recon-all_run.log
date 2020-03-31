@@ -1,0 +1,165 @@
+(base) will@desk:~/Projects/RMS$ python run_freesurfer.py 
+/home/will/anaconda3/lib/python3.7/site-packages/flywheel/flywheel.py:5758: UserWarning: Client version 10.0.1 does not match server version 11.0.1. Please update your client version!
+  warnings.warn('Client version {} does not match server version {}. Please update your client version!'.format(SDK_VERSION, release_version))
+WARNING:Flywheel:Use "pip install flywheel-sdk~=11.0.1" to install a compatible version for this server
+2
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019040310253677677203302.0.0.0.nii.gz
+Running analysis for gonzalez_allegre_pilot_05
+5e7be9a77204d52965cfcf6e
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019040310483866542175391.0.0.0.nii.gz
+Running analysis for gonzalez_allegre_pilot_05
+5e7be9a77204d52965cfcf70
+3
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019042413071910691256283.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_08
+5e7be9a87204d52962cfcf7f
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019042413302489485428502.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_08
+5e7be9a87204d52965cfcf73
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.20190424133554379247757.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_08
+5e7be9a87204d52965cfcf75
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019050609192539346554051.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_09
+5e7be9a97204d52962cfcf85
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019050609245517143874876.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_09
+5e7be9a97204d52965cfcf77
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019050609415567833626027.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_09
+5e7be9a97204d52965cfcf7a
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019050609473214600045551.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_09
+5e7be9a97204d52943cfcfaf
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019050610562382502684752.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_07
+5e7be9aa7204d5295fcfcf95
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019050611012397476004280.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_07
+5e7be9aa7204d52965cfcf7f
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019050611180957709955428.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_07
+5e7be9aa7204d52962cfcf88
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019050611230486395473169.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_07
+5e7be9aa7204d52965cfcf83
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019052909580221134330672.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_06
+5e7be9ab7204d52953cfcfcc
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019052910033333915051757.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_06
+5e7be9ab7204d52965cfcf86
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019052910204540745604468.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_06
+5e7be9ab7204d52965cfcf88
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019052910261587132523787.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_06
+5e7be9ac7204d52965cfcf8a
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019082214212175803638967.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_13
+5e7be9ac7204d52965cfcf8e
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.201908221426025855556933.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_13
+5e7be9ac7204d52962cfcf8d
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019082214425514441908603.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_13
+5e7be9ac7204d52962cfcf90
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019082214474012245525824.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_13
+5e7be9ad7204d52953cfcfce
+0
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019082810590267942372025.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_15
+5e7be9ad7204d52965cfcf93
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.20190828110411766391810.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_15
+5e7be9ae7204d52962cfcf94
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.2019082811210941412343092.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_15
+5e7be9ae7204d52968cfcf6e
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.2019082811261572972061239.0.0.0.nii.gz
+Running analysis for gonzalez_alegre_pilot_15
+5e7be9ae7204d52968cfcf70
+4
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.30000019082722214967400003715.nii.gz
+Running analysis for gonzalez_alegre_pilot_12
+5e7be9af7204d52968cfcf74
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.30000019082722214967400004725.nii.gz
+Running analysis for gonzalez_alegre_pilot_12
+5e7be9af7204d52968cfcf77
+ABCD_T1w_MPR_vNav_passive RMS
+1.3.12.2.1107.5.2.43.167024.30000019082722214967400006363.nii.gz
+Running analysis for gonzalez_alegre_pilot_12
+5e7be9af7204d52968cfcf79
+ABCD_T1w_MPR_vNav_active RMS
+1.3.12.2.1107.5.2.43.167024.30000019082722214967400007373.nii.gz
+Running analysis for gonzalez_alegre_pilot_12
+5e7be9af7204d52965cfcf98
+0
+4
+ABCD_T1w_MPR_vNav_passive RMS
+ABCD_T1w_MPR_vNav_passive_9.nii.gz
+Running analysis for gonzalez_alegre_pilot_11
+5e7be9b07204d52965cfcf9b
+ABCD_T1w_MPR_vNav_active RMS
+ABCD_T1w_MPR_vNav_active_24.nii.gz
+Running analysis for gonzalez_alegre_pilot_11
+5e7be9b07204d52968cfcf7d
+ABCD_T1w_MPR_vNav_active RMS
+ABCD_T1w_MPR_vNav_active_12.nii.gz
+Running analysis for gonzalez_alegre_pilot_11
+5e7be9b07204d52965cfcf9d
+ABCD_T1w_MPR_vNav_passive RMS
+ABCD_T1w_MPR_vNav_passive_21.nii.gz
+Running analysis for gonzalez_alegre_pilot_11
+5e7be9b07204d52965cfcfa0
+4
+ABCD_T1w_MPR_vNav_passive RMS
+ABCD_T1w_MPR_vNav_passive_9.nii.gz
+Running analysis for gonzalez_alegre_pilot_10
+5e7be9b07204d52968cfcf82
+ABCD_T1w_MPR_vNav_active RMS
+ABCD_T1w_MPR_vNav_active_24.nii.gz
+Running analysis for gonzalez_alegre_pilot_10
+5e7be9b17204d5295fcfcf98
+ABCD_T1w_MPR_vNav_active RMS
+ABCD_T1w_MPR_vNav_active_12.nii.gz
+Running analysis for gonzalez_alegre_pilot_10
+5e7be9b17204d52968cfcf85
+ABCD_T1w_MPR_vNav_passive RMS
+ABCD_T1w_MPR_vNav_passive_21.nii.gz
+Running analysis for gonzalez_alegre_pilot_10
+5e7be9b27204d52965cfcfa3
+

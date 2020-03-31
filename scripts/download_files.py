@@ -18,8 +18,8 @@ for a in recon_list:
     os.makedirs(subdir, exist_ok=True)
     # download files
     if len(a.files) > 0:
-        vol_stats_csv = [f for f in a.files if 'aseg_stats_vol_mm3.csv' in f.name]
+        vol_stats_csv = [f for f in a.files if 'T1.nii.gz' in f.name]
         if len(vol_stats_csv) > 0:
             a.download_file(vol_stats_csv[0].name, \
-            os.path.join(subdir, name+'.csv'))
-            print("Downloading " + name + '.csv')
+            os.path.join(subdir, name+'_T1.nii.gz'))
+            print("Downloading " + name + '_T1.nii.gz')

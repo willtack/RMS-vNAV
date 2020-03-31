@@ -1,0 +1,2234 @@
+(base) will@desk:~/Projects/RMS$ bash -x scripts/registerPairs.sh 
++ dataDir=/home/will/Projects/RMS/data
++ mniDir=/home/will/Projects/RMS/mni
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_20_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_20_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_20
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_05/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ cut -d _ -f 8
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ cut -d . -f 1
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_06/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ cut -d _ -f 8
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_07/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_23_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_23_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_23
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_active_RMS_23_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_20_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_20_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_20
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_20_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_08/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_09/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_10/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ cut -d _ -f 8
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_11/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ cut -d _ -f 8
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
++ mode=active
+++ cut -d . -f 1
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_13/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
++ for subdir in ${dataDir}/*
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_12_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_12
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_12_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d _ -f 8
++ mode=active
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ echo ABCD_T1w_MPR_vNav_active_RMS_24_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_active_RMS_24
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_active_RMS_24_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_21_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_21
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mni152.nii...
++ for seg in ${subdir}/*_aseg.mgz
+++ echo /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d _ -f 8
++ mode=passive
+++ basename /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz
+++ cut -d . -f 1
++ fname=ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ echo ABCD_T1w_MPR_vNav_passive_RMS_9_aseg
+++ cut -d _ -f 1-7
++ t1name=ABCD_T1w_MPR_vNav_passive_RMS_9
++ mri_label2vol --seg /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mgz --reg /home/will/Projects/RMS/mni/mni152.register.dat --temp /home/will/Projects/RMS/mni/mni152.nii.gz --o /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Number of labels: 0
+Annot File:      (null)
+Template Volume: /home/will/Projects/RMS/mni/mni152.nii.gz
+Outut Volume: /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz
+Registration File: /home/will/Projects/RMS/mni/mni152.register.dat
+Fill Threshold: 0
+Label Vox Vol:  1
+ProjType:       (null)
+ProjTypeId:     0
+ProjStart:      0
+ProjStop:       0
+ProjDelta:      0.1
+Subject:  (null)
+Hemi:     (null)
+UseNewASeg2Vol:  0
+DoLabelStatVol  0
+LabelCodeOffset  0
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+$Id: mri_label2vol.c,v 1.46 2014/12/08 21:11:54 greve Exp $
+Template RAS-to-Vox: --------
+-1.00000  -0.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -1.00000   109.00000;
+-0.00000   1.00000  -0.00000   91.00000;
+-0.00000  -0.00000  -0.00000   1.00000;
+Template Voxel Volume: 1
+nHits Thresh: 0
+Loading registration from /home/will/Projects/RMS/mni/mni152.register.dat
+RegMat: --------
+ 0.99753  -0.00732   0.01760   0.95709;
+-0.01296  -0.00926   0.99706  -17.81596;
+-0.01460  -1.00094   0.00244  -18.54964;
+ 0.00000   0.00000   0.00000   1.00000;
+Label RAS-to-Vox: --------
+-0.99753   0.00732  -0.01760   90.04291;
+ 0.01460   1.00094  -0.00244   127.54964;
+-0.01296  -0.00926   0.99706   73.18404;
+ 0.00000   0.00000   0.00000   1.00000;
+mri_label2vol done
++ mri_convert --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii
+mri_convert.bin --in_type mgz --out_type nii --out_orientation RAS /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.mgz...
+TR=2530.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+Setting output orientation to RAS
+Reslicing using trilinear interpolation 
+writing to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_15/ABCD_T1w_MPR_vNav_passive_RMS_9_aseg.mni152.nii...
+

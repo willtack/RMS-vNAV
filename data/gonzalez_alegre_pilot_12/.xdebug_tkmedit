@@ -1,0 +1,9 @@
+tkmedit started: Mon Mar 30 19:36:34 2020
+
+	/usr/local/freesurfer/tktools/tkmedit.bin /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12/ABCD_T1w_MPR_vNav_passive_RMS_21_aseg.mgz 
+
+$Id: tkmedit.c,v 1.348 2014/11/06 16:47:49 greve Exp $ $Name: stable6 $
+Set user home dir to /home/will/Projects/RMS/data/gonzalez_alegre_pilot_12
+ERROR: Parsing arguments
+   Subject and image not declared
+Fatal error in parsing command line args.
