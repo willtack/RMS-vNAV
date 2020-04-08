@@ -7,7 +7,7 @@
 dataDir='/home/will/Projects/RMS/data'
 mniDir='/home/will/Projects/RMS/mni'
 
-for subdir in ${dataDir}/*; do
+for subdir in ${dataDir}/gonzalez_alegre_pilot_08; do
   for seg in ${subdir}/*_aseg.mgz; do
     #mode=$(echo $seg | cut -d '_' -f 8)
     fname=$(basename ${seg} | cut -d '.' -f 1)

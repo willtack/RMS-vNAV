@@ -45,5 +45,5 @@ for subdir, dirs, files in os.walk(data_dir):
 # create dataframe from first dict and save both dfs to csvs
 print(data_dict)
 df = pd.DataFrame(data=data_dict)
-csv_file = df.to_csv(os.path.join(data_dir, '..', 'dice2.csv'))
-csv_file2 = roi_df.to_csv(os.path.join(data_dir, '..', 'rois.csv'))
+csv_file = df.to_csv(os.path.join(data_dir, '..', 'dice3.csv'))
+csv_file2 = roi_df.to_csv(os.path.join(data_dir, '..', 'rois2.csv'))
