@@ -13,8 +13,11 @@ df_list = []
 for subdir, dirs, files in os.walk(data_dir):
     onlycsvs = [f for f in files if f.endswith(".csv")]
     for csv in onlycsvs:
+        print(csv)
         mode = csv.split("_")[4] # determine whether it's active/passive from filename
+        print(mode)
         no = csv.split("_")[6].split(".")[0] # determine series number from filename
+        print(no)
         df = pd.read_csv(os.path.join(subdir, csv)) # read the csv into dataframe
         df.insert(1, "Mode", mode +'_'+no) # insert a column specifying Mode
         df_list.append(df)
