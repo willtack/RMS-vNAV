@@ -1,5 +1,6 @@
 import flywheel
 import os
+import glob
 
 fw = flywheel.Client()
 project = fw.lookup('huntington/Pilot_Study')
@@ -14,8 +15,14 @@ for a in recon_list:
     name = sd +'_'+str(sn)
     # get subject name for output folder
     sub = fw.get(a.parents.subject)
+    print(sub.label)
     subdir = os.path.join(outdir, sub.label)
     shortlabel = 'pilot_' + sub.label[-2:]
+    # skip if already downloaded
+    list = glob.glob(os.path.join(subdir,name+'_aseg.mgz'))
+    if len(list) > 0:
+        print("Skipping {0}'s {1}".format(sub.label, name))
+        continue
     # download files
     if len(a.files) > 0:
         zip_folder = [f for f in a.files if '.zip' in f.name]
