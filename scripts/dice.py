@@ -17,8 +17,8 @@ roi_df = pd.DataFrame(data=rois_dict)
 
 for subdir, dirs, files in os.walk(data_dir):
     # get lists of the passive and active segmentation files for this subject
-    passive_list = [f for f in files if "passive" in f and 'mni152.nii' in f]
-    active_list = [f for f in files if "active" in f and 'mni152.nii' in f]
+    passive_list = [f for f in files if "passive" in f and 'aseg.nii' in f]
+    active_list = [f for f in files if "active" in f and 'aseg.nii' in f]
     subject = subdir.split('/')[-1] # subject name is the last element in the path
     print(subject)
     for list in passive_list, active_list:
@@ -40,10 +40,10 @@ for subdir, dirs, files in os.walk(data_dir):
             data_dict['jaccard'].append(jaccard)
             # append the list of DF
             if len(roi_di) == 43: # should be 43 regions. dims need to be = for concatenation
-                roi_df[subject] = roi_di
+                roi_df[subject+'_'+ mode] = roi_di
 
 # create dataframe from first dict and save both dfs to csvs
 print(data_dict)
 df = pd.DataFrame(data=data_dict)
-csv_file = df.to_csv(os.path.join(data_dir, '..', 'dice3.csv'))
-csv_file2 = roi_df.to_csv(os.path.join(data_dir, '..', 'rois2.csv'))
+csv_file = df.to_csv(os.path.join(data_dir, '..', 'dice', 'dice3.csv'), index=False)
+csv_file2 = roi_df.to_csv(os.path.join(data_dir, '..', 'rois', 'rois3.csv'))

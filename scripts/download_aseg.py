@@ -15,7 +15,6 @@ for a in recon_list:
     name = sd +'_'+str(sn)
     # get subject name for output folder
     sub = fw.get(a.parents.subject)
-    print(sub.label)
     subdir = os.path.join(outdir, sub.label)
     shortlabel = 'pilot_' + sub.label[-2:]
     # skip if already downloaded
@@ -25,8 +24,9 @@ for a in recon_list:
         continue
     # download files
     if len(a.files) > 0:
+        print(sn)
         zip_folder = [f for f in a.files if '.zip' in f.name]
         if len(zip_folder) > 0:
             a.download_file_zip_member(zip_folder[0].name, \
             shortlabel+'/mri/aseg.mgz', os.path.join(subdir, name+'_aseg.mgz'))
-            print("Downloading " + shortlabel + "'s " + name + '_aseg.mgz')
+            print("Downloading " + shortlabel + "'s " + name + '_aseg.mgz from ' + sub.label)

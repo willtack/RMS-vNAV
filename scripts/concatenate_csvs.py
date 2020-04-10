@@ -26,4 +26,4 @@ for subdir, dirs, files in os.walk(data_dir):
 # concatenate the list of subject-wise dataframes into one large dataframe and save as csv
 master_df = pd.concat(df_list, ignore_index=True)
 #master_df.set_index('Measure:volume', drop=True, inplace=True) # change index to subject IDs
-master_df.to_csv(os.path.join(data_dir, '..', 'volumes.csv'))
+master_df.to_csv(os.path.join(data_dir, '..', 'vols', 'volumes2.csv'))
