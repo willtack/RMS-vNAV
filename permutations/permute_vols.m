@@ -1,8 +1,8 @@
 % for a given subject
 % for a given region
+% where V is a 4x1 vector of volume measurements
 
-% arbitrary volumes
-V = [41; 42; 31; 400];
+function diff_matrix = permute_vols(V)
 
 % permute, get 6x2 matrix,
 % each row a combination of 2 items chosen from V
@@ -18,9 +18,9 @@ C = nchoosek(V, 2);
 % extend the matrix
 E = zeros(length(C),2);
 C_extens = [C E];
+
 % initialize diff matrix
 diff_matrix = zeros(length(C_extens),1);
-
 
 % loop thru rows and grab items in V that aren't already in that row
 for i = 1:length(C_extens)
@@ -34,4 +34,3 @@ for i = 1:length(C_extens)
     diff_matrix(i) = diff;
 end
 
-diff_matrix
