@@ -1,9 +1,9 @@
 imax=6^10-1;
-n_permutations=100000;
-load('vols/accumbens_vols.mat');
-volumes = accumbens_vols;
+n_permutations=10000;
+load('vols/Vrputamen.mat');
+volumes = Vrputamen;
 
-% generate 5000 pseudorandom integers
+% generate N pseudorandom integers
 X = randi(imax,[n_permutations,1]); 
 % empty vector for storing diff scores in the future
 D = zeros(size(X));
@@ -12,8 +12,10 @@ for i = 1:length(X)
    % convert each integer to base 6
    integer=X(i,1);
    hexi_int = dec2base(integer,6); %*
-   if ~(length(hexi_int) >= 10)
-       continue
+   while ~(length(hexi_int) >= 10) % generate a new random integer
+       new_integer = randi(imax);
+       X(i,1) = new_integer;
+       hexi_int = dec2base(new_integer, 6);
    end
    % each digit of hexi_int encodes one of 6 permutations for a subject
    results = zeros(6, 4);

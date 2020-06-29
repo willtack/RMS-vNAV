@@ -1,0 +1,11 @@
+region,diff,p,prct
+rthalamus,0.0102,0.0441,95.59
+rputamen,-0.0027,0.6373,36.27
+rpallidum,0.0026,0.4231,57.69
+rcaudate,0.0152,0.1813,81.87
+lthalamus,0.0116,0.0305,96.95
+lputamen,0.0052,0.2652,73.48
+lpallidum,0.0195,0.1979,80.21
+lcaudate,0.1524,0.2564,74.36
+,,,
+lcaudate (no outlier row 6),0.0155,0.5002,49.98
