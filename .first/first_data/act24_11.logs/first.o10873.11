@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+0.914756 -0.0365154 0.0553269 
+0.0626489 -0.169246 -0.848868 
+0.057702 0.866651 -0.161555 
+NEw done imodes transform
+mode  257.23
+D 
+336 1926 1926 336
+open file act24_11-R_Pall_first.vtk to save.
+succesfully opened file act24_11-R_Pall_first.vtk to save.

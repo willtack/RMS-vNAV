@@ -1,8 +1,8 @@
 region, diff, p
-accumbens, 0.0097, 0.3738
-caudate, 0.0153, 0.2423
-pallidum, 0.0106, 0.2369
-putamen, 0.0195, 0.1742
-
-
-
+accumbens,0.0097,0.3738
+caudate,0.0153,0.2423
+pallidum,0.0106,0.2369
+putamen,0.0195,0.1742
+,,
+rthalamus,-0.0046,0.5009
+lthalamus,-0.0045,0.6849
