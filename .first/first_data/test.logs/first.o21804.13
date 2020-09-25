@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+1.03647 -0.105623 -0.0446215 
+-0.0818024 -0.196051 -0.906783 
+0.101434 0.858282 -0.157065 
+NEw done imodes transform
+mode  253.933
+D 
+336 1926 1926 336
+open file test-R_Thal_first.vtk to save.
+succesfully opened file test-R_Thal_first.vtk to save.

@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+0.931105 0.0610501 0.0101936 
+0.0247456 -0.155366 -0.811826 
+-0.0662911 0.853951 -0.138422 
+NEw done imodes transform
+mode  256.357
+D 
+336 1926 1926 336
+open file pass9_07-R_Thal_first.vtk to save.
+succesfully opened file pass9_07-R_Thal_first.vtk to save.

@@ -1,0 +1,4 @@
+act12_12: blatantly incorrect scaling  NOT INCLUDED ANYWAY
+act24_12: blatantly incorrect scaling NOT INCLUDED ANYWAY
+act11_08: outlier volumes, poor registration
+
