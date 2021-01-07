@@ -1,7 +1,7 @@
 imax=6^10-1;
 n_permutations=100000;
-load('vols/rthalamus.mat');
-volumes = rthalamus ;
+load('vols/freesurfer/thalamus.mat');
+volumes = thalamus ;
 
 % generate N pseudorandom integers
 X = randi(imax,[n_permutations,1]); 
