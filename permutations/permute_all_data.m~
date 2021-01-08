@@ -1,7 +1,13 @@
 imax=6^10-1;
+<<<<<<< HEAD
 n_permutations=100000;
 load('vols/freesurfer/lpallidum.mat');
 volumes = l ;
+=======
+n_permutations=10000;
+load('vols/Vlputamen.mat');
+volumes = Vlputamen;
+>>>>>>> c6de77d31e36318741c4c0c66c0aace80a2e30de
 
 % generate N pseudorandom integers
 X = randi(imax,[n_permutations,1]); 
